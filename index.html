@@ -7,42 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="all.css">
     <title>Taiwan Bus</title>
 </head>
 
 <body>
-    <div class="header">
-        <div class="container"><img src="" alt="" class="logo"></div>
+    <div class="header bg-main text-center p-3">
+        <div class="container"><img src="images/logo.svg" alt="" class="logo"></div>
     </div>
-    <div class="container d-flex flex-column">
-        <div class="">
-            <a href="" class="rounded-3">路線搜尋</a>
-            <a href="" class="rounded-3">附近站牌</a>
+    <div class="d-flex flex-column">
+        <div class="bg-main pb-2">
+            <div class="container d-flex">
+                <a href="" class="flex-fill rounded-5 btn btn-light shadow m-2 p-4"><img src="images/search.svg" alt=""> <span class="d-block text-sec">路線搜尋</span> </a>
+                <a href="" class="flex-fill rounded-5 btn btn-light shadow m-2 p-4"><img src="images/map.svg" alt=""> <span class="d-block text-sec">附近站牌</span> </a>
+            </div>
         </div>
-        <div class="">
-            <div>附近站牌</div>
-            <div>頂城</div>
-            <ul>
-                <li>
-                    <div class="round-ed-pill"></div>
+        <div class="p-3">
+            <div class="d-flex"><span class="me-2">附近站牌</span><span class="rounded-pill bg-main-m fs-6 px-2 text-sec">10m</span> <img src="images/autorenew.svg" alt="" class="ms-auto"> </div>
+            <div class="fs-2">頂城</div>
+            <ul class="p-0">
+                <li class="d-flex my-2">
+                    <div class="stop-statue me-2 rounded-pill border border-3 d-flex justify-content-center"> <span class="align-self-center text-waring">到站中</span></div>
                     <div>
                         <div class="fs-4">綠8</div>
-                        <div class="fs6">往中和</div>
+                        <div class="fs-6 text-gray-3">往中和</div>
                     </div>
                 </li>
-                <li>
-                    <div class="round-ed-pill"></div>
+                <li class="d-flex my-2">
+                    <div class="stop-statue me-2 rounded-pill border border-3 d-flex justify-content-center"> <span class="align-self-center text-waring">將到站</span></div>
                     <div>
                         <div class="fs-4">綠8</div>
-                        <div class="fs6">往中和</div>
+                        <div class="fs-6 text-gray-3">往中和</div>
                     </div>
                 </li>
-                <li>
-                    <div class="round-ed-pill"></div>
+                <li class="d-flex my-2">
+                    <div class="stop-statue me-2 rounded-pill border border-3 d-flex justify-content-center"> <span class="align-self-center"> <span class="fs-2">3</span><span class="fs-6"> 分</span> </span>
+                    </div>
                     <div>
                         <div class="fs-4">綠8</div>
-                        <div class="fs6">往中和</div>
+                        <div class="fs-6 text-gray-3">往中和</div>
                     </div>
                 </li>
             </ul>
