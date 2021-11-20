@@ -46,6 +46,10 @@ body {
     background: var(--main-color-m);
 }
 
+.bg-gray1 {
+    background: var(--gray-color-1);
+}
+
 .stop-statue {
     width: 6em;
 }
