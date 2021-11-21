@@ -50,6 +50,62 @@ body {
     background: var(--gray-color-1);
 }
 
+.bg-red {
+    background: var(--red-color);
+}
+
+.bg-blue {
+    background: var(--blue-color);
+}
+
+.bg-brown {
+    background: var(--brown-color);
+}
+
+.bg-green {
+    background: var(--green-color);
+}
+
+.bg-orange {
+    background: var(--orange-color);
+}
+
+.border-main {
+    border-color: var(--main-color);
+}
+
+.rounded-12p {
+    border-radius: 12px;
+}
+
 .stop-statue {
     width: 6em;
+}
+
+.rounded-12p .card-header {
+    border-radius: 12px 12px 0 0;
+}
+
+.rounded-12p .card-body {
+    border-radius: 0 0 12px 12px;
+}
+
+#searchBus {
+    border-radius: 8px;
+    border-color: var(--black-color);
+}
+
+#citySelector {
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+    border-radius: 12px 12px 0 0;
+}
+
+#citySelector:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.25);
+    height: 50%;
+    position: fixed;
+    top: 0;
 }
