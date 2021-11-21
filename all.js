@@ -11,3 +11,13 @@ function displayKey() {
     }
 
 }
+
+function displayCitySelect() {
+    const citySelector = document.querySelector('#citySelector');
+    console.log(citySelector);
+    if (citySelector.style.display != 'none') {
+        citySelector.style.display = 'none';
+    } else {
+        citySelector.style.display = 'block';
+    }
+}
