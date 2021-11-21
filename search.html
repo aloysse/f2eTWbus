@@ -14,7 +14,7 @@
     <div class="d-flex bg-main p-2">
         <button class="btn text-nowrap">返回</button>
         <input type="text" class="form-control" id="searchBus" placeholder="輸入公車路線">
-        <button class="btn text-nowrap">縣市</button>
+        <button class="btn text-nowrap" onclick="displayCitySelect()">縣市</button>
     </div>
     <div class="container">
         <ul class="p-0">
@@ -50,44 +50,46 @@
     </div>
 
     <!-- 縣市篩選標籤開始 -->
-    <div id="citySelector" class="card rounded-12p shadow" style="display:none">
-        <div class="card-header bg-main-m text-end">完成</div class="card-header bg-main-m">
-        <div class="card-body">
-            <div class="mb-2">全部取消</div>
-            <div class="container">
-                <div class="row g-2">
-                    <div class="col-6">
-                        <div class="btn rounded-pill bg-main">基隆市</div>
-                    </div>
-                    <div class="col-6">
-                        <div class="btn rounded-pill bg-main">基隆市</div>
-                    </div>
-                    <div class="col-6">
-                        <div class="btn rounded-pill bg-main">基隆市</div>
-                    </div>
-                    <div class="col-6">
-                        <div class="btn rounded-pill bg-main">基隆市</div>
-                    </div>
-                    <div class="col-6">
-                        <div class="btn rounded-pill bg-main">基隆市</div>
-                    </div>
-                    <div class="col-6">
-                        <div class="btn rounded-pill bg-main">基隆市</div>
-                    </div>
-                    <div class="col-6">
-                        <div class="btn rounded-pill bg-main">基隆市</div>
-                    </div>
-                    <div class="col-6">
-                        <div class="btn rounded-pill bg-main">基隆市</div>
-                    </div>
-                    <div class="col-6">
-                        <div class="btn rounded-pill bg-main">基隆市</div>
-                    </div>
-                    <div class="col-6">
-                        <div class="btn rounded-pill bg-main">基隆市</div>
-                    </div>
-                    <div class="col-6">
-                        <div class="btn rounded-pill bg-main">基隆市</div>
+    <div id="citySelector">
+        <div class="card rounded-12p shadow citySelector-content" style="display:block">
+            <div class="card-header bg-main-m text-end"> <button class="btn p-0" onclick="displayCitySelect()">完成</button></div>
+            <div class="card-body">
+                <div class="mb-2">全部取消</div>
+                <div class="container">
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <div class="btn rounded-pill city-tag">基隆市</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="btn rounded-pill city-tag">基隆市</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="btn rounded-pill city-tag">基隆市</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="btn rounded-pill city-tag-selected">基隆市</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="btn rounded-pill city-tag">基隆市</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="btn rounded-pill city-tag">基隆市</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="btn rounded-pill city-tag-selected">基隆市</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="btn rounded-pill city-tag">基隆市</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="btn rounded-pill city-tag">基隆市</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="btn rounded-pill city-tag">基隆市</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="btn rounded-pill city-tag">基隆市</div>
+                        </div>
                     </div>
                 </div>
             </div>
