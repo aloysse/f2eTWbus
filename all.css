@@ -83,7 +83,8 @@ body {
 }
 
 .stop-statue {
-    width: 5em;
+    width: 96px;
+    height: 48px;
 }
 
 .rounded-12p .card-header {
@@ -130,4 +131,75 @@ body {
 
 .city-tag {
     border: 1px solid var(--main-color);
+}
+
+.nav-tabs .nav-link {
+    background: var(--gray-color-1);
+    color: var(--gray-color-3);
+    border-radius: 32px 32px 0 0;
+    border: 0;
+    box-shadow: inset 0 -2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-tabs .nav-link.active {
+    box-shadow: 0 -5px 16px rgba(0, 0, 0, 0.2);
+}
+
+.stop-row {
+    height: 60px;
+}
+
+.stop-line {
+    position: relative;
+    height: 60px;
+    width: 4px;
+    background-color: var(--sec-color-m);
+    top: 50%;
+    margin-right: 14px;
+    transform: translateX(50%);
+}
+
+.stop-line-act {
+    width: 8px;
+    background-color: var(--main-color-m);
+}
+
+.stop-line-act:after {
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+    background: var(--main-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 22px;
+}
+
+.stop-line-act:before {
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+    background: blue;
+    position: absolute;
+    left: -50px;
+    top: 22px;
+}
+
+.stop-point {
+    width: 22px;
+    height: 22px;
+    border: 4px solid var(--sec-color);
+    border-radius: 11px;
+    background: #ffffff;
+    position: absolute;
+    z-index: 20;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -11px;
+}
+
+.stop-row:last-child .stop-line {
+    background: 0;
 }
