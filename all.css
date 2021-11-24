@@ -74,6 +74,10 @@ body {
     border-color: var(--main-color);
 }
 
+.rounded-8p {
+    border-radius: 8px;
+}
+
 .rounded-12p {
     border-radius: 12px;
 }
@@ -176,17 +180,6 @@ body {
     top: 22px;
 }
 
-.stop-line-act:before {
-    content: "";
-    height: 16px;
-    width: 16px;
-    border-radius: 8px;
-    background: blue;
-    position: absolute;
-    left: -50px;
-    top: 22px;
-}
-
 .stop-point {
     width: 22px;
     height: 22px;
@@ -202,4 +195,64 @@ body {
 
 .stop-row:last-child .stop-line {
     background: 0;
+}
+
+.bus {
+    position: absolute;
+    bottom: 12px;
+    /* transform: translateY(-50%); */
+    right: 27px;
+}
+
+.bus-num {
+    background: var(--main-color-m);
+    border-radius: 8px;
+}
+
+.bus-num:after {
+    display: block;
+    content: '';
+    border-width: 8px 8px 8px 8px;
+    border-style: solid;
+    border-color: var(--main-color-m) transparent transparent transparent;
+    /* 定位 */
+    position: absolute;
+    right: 8px;
+    top: 100%;
+}
+
+.stop-point-act .stop-point {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border-color: var(--main-color);
+    top: -16px;
+}
+
+.stop-point-act .stop-point:after {
+    content: "";
+    background: var(--main-color);
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 4px;
+}
+
+.stop-point-act .bus {
+    bottom: calc(100% - 18px);
+}
+
+@media screen and (min-width:768px) {
+    .bg-md-none {
+        background: none;
+    }
+    .index-btn img {
+        width: 104px;
+    }
+    .index-btn span {
+        font-size: 36px;
+    }
 }
