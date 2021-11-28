@@ -245,6 +245,11 @@ body {
     bottom: calc(100% - 18px);
 }
 
+#citySelect {
+    width: 10em;
+    border-radius: 8px;
+}
+
 @media screen and (min-width:768px) {
     .bg-md-none {
         background: none;
